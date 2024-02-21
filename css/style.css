@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+}
+
 .container{
-    width: 400px;
+    width: 300px;
     margin: 0 auto;
     margin-top: 100px;
 }
@@ -19,16 +22,58 @@
 }
 
 .schermo{
-    width: 400px;
-    height: 100px;
+    width: 300px;
+    height: 80px;
     background-color: black;
-    color: green;
+    color: rgba(9, 210, 151, 1);
+    font-family: "seven segment";
+    font-size: 40px;
+    text-align: right;
+    padding: 20px;
 }
 
+
+/* tasti calcolatrince */
+
 .container-tasti{
-    width: 400px;
-    height: 300px;
     background-color: rgb(220 220 220);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+}
+
+.tasto{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    background-color: rgb(187 187 187);
+    border-radius: 10px;
+}
+
+.tastierino-numerico{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.zero{
+    flex-grow: 10;
+}
+
+.tastierino-comandi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.c, .uguale{
+    background-color: orange;
+}
+
+.piu, .meno, .diviso, .per{
+    background-color: rgb(119 168 176);
 }
